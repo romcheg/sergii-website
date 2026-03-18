@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nordic-white: #f8f9fa;
+  --color-nordic-light: #e9ecef;
+  --color-nordic-muted: #868e96;
+  --color-nordic-dark: #212529;
+  --color-nordic-accent: #2d6a8f;
+  --color-nordic-accent-light: #4a8ab0;
+  --color-nordic-accent-dark: #1d4d6b;
+  --color-nordic-teal: #2b7a78;
+  --color-nordic-teal-light: #3aafa6;
+
+  --font-family-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  --spacing-section: 5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family-sans);
+  }
+
+  body {
+    background-color: var(--color-nordic-white);
+    color: var(--color-nordic-dark);
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm font-medium tracking-wide text-gray-600 hover:text-[#2d6a8f] transition-colors duration-200 uppercase;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-[#2d6a8f] text-white px-6 py-3 text-sm font-medium tracking-wide uppercase hover:bg-[#1d4d6b] transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border border-[#2d6a8f] text-[#2d6a8f] px-6 py-3 text-sm font-medium tracking-wide uppercase hover:bg-[#2d6a8f] hover:text-white transition-colors duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-light text-gray-800 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-sm font-medium tracking-[0.15em] uppercase text-[#2d6a8f] mb-3;
+  }
+
+  .card {
+    @apply bg-white p-8 border border-gray-100 hover:border-[#2d6a8f] hover:shadow-lg transition-all duration-300;
+  }
+
+  .form-input {
+    @apply w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 bg-white focus:outline-none focus:border-[#2d6a8f] transition-colors duration-200 placeholder-gray-400;
+  }
+
+  .form-label {
+    @apply block text-xs font-medium tracking-wide uppercase text-gray-500 mb-2;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .animate-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
