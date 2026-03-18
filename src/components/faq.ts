@@ -11,11 +11,11 @@ const FAQ_ITEMS: readonly FaqItem[] = [
     id: "faq-2",
     question: "How long will my recovery take after surgery?",
     answer:
-      "Recovery time varies depending on the procedure. Minor procedures such as carpal tunnel release typically allow return to light activity within 2–4 weeks. More complex surgeries like rotator cuff repair may require 4–6 months of rehabilitation. Dr. Petrenko will provide a personalised recovery plan during your consultation.",
+      "Recovery time varies depending on the procedure. Minor procedures such as carpal tunnel release typically allow return to light activity within 2–4 weeks. More complex surgeries like rotator cuff repair may require 4–6 months of rehabilitation. Dr. Chagovets will provide a personalised recovery plan during your consultation.",
   },
   {
     id: "faq-3",
-    question: "Do I need a referral to see Dr. Petrenko?",
+    question: "Do I need a referral to see Dr. Chagovets?",
     answer:
       "A referral is not always required, but it is recommended and may be necessary for insurance coverage. Please contact our office to confirm your insurance requirements before booking. Self-pay patients are always welcome.",
   },
@@ -23,7 +23,7 @@ const FAQ_ITEMS: readonly FaqItem[] = [
     id: "faq-4",
     question: "What non-surgical treatments are available?",
     answer:
-      "Many upper-extremity conditions can be effectively managed without surgery. Options include physiotherapy, corticosteroid injections, platelet-rich plasma (PRP) therapy, splinting and bracing, activity modification, and anti-inflammatory medications. Dr. Petrenko always explores conservative options first before recommending surgery.",
+      "Many upper-extremity conditions can be effectively managed without surgery. Options include physiotherapy, corticosteroid injections, platelet-rich plasma (PRP) therapy, splinting and bracing, activity modification, and anti-inflammatory medications. Dr. Chagovets always explores conservative options first before recommending surgery.",
   },
   {
     id: "faq-5",
@@ -35,7 +35,7 @@ const FAQ_ITEMS: readonly FaqItem[] = [
     id: "faq-6",
     question: "Is my condition serious enough to require surgery?",
     answer:
-      "Surgery is only recommended when conservative treatments have not provided adequate relief, or when the severity of the injury necessitates immediate intervention. Dr. Petrenko takes a measured, evidence-based approach to ensure you receive the most appropriate treatment for your specific condition.",
+      "Surgery is only recommended when conservative treatments have not provided adequate relief, or when the severity of the injury necessitates immediate intervention. Dr. Chagovets takes a measured, evidence-based approach to ensure you receive the most appropriate treatment for your specific condition.",
   },
 ];
 
